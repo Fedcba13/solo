@@ -2,7 +2,7 @@ package baekjoon;
 
 import java.util.Scanner;
 
-public class º°Âï±â_2448 {
+public class Star_2448 {
 
 	static int[][] answer;
 
