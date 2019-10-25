@@ -38,17 +38,16 @@ public class Exam {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		int size = sc.nextInt();
-		int rotate = sc.nextInt();
+		int size = sc.nextInt(); // 크기
+		int rotate = sc.nextInt(); // 회전수
 		
-		int flag = 1;
-		
-		int start = 0;
+		int flag = 1; // 회전방향
+		int start = 0; 
 		int end = size-1;
 		
 		sc.nextLine(); // 개행문자 날리기
 		
-		String[][] matrix = new String[size][size];
+		String[][] matrix = new String[size][size]; // 행렬
 		
 		for (int i=0; i<size; i++) {
 			String[] temp = sc.nextLine().split("\\s");
@@ -58,8 +57,8 @@ public class Exam {
 		System.out.println();
 		
 		while(start < end) {
-			int curSize = end - start + 1;
-			int cnt = curSize * curSize - (curSize - 2) * (curSize - 2);
+			int curSize = end - start + 1;  //현재 배열크기
+			int cnt = curSize * curSize - (curSize - 2) * (curSize - 2); // 배열의 값 수
 			
 			String[] curMatrix = new String[cnt];
 			
@@ -108,7 +107,7 @@ public class Exam {
 				}
 			}
 			
-			int curRotate = flag * rotate % cnt ;
+			int curRotate = flag * rotate % cnt ; // 회전수
 			if(curRotate < 0) {
 				curRotate = cnt + curRotate;
 			}
