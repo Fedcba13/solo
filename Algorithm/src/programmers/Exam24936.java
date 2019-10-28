@@ -1,4 +1,4 @@
-package programmers.mocktest;
+package programmers;
 
 public class Exam24936 {
 

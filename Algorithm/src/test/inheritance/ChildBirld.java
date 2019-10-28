@@ -20,13 +20,11 @@ public class ChildBirld extends Birld {
 		
 		if(c instanceof ChildBirld2){
 			((ChildBirld2) c).walk();
-		}
+ 		}
 		
 		b.print();
 		((ChildBirld)b).run();
 		((ChildBirld)b).fly();
-		
-		Stack stack = new Stack<>();
 
 		System.out.println();
 		
@@ -45,11 +43,11 @@ public class ChildBirld extends Birld {
 	}
 
 	public void print(){
-		System.out.println("»õ ÀÚ½ÄÀÌ ³­´Ù");
+		System.out.println("ï¿½ï¿½ ï¿½Ú½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 	}
 	
 	public void run(){
-		System.out.println("¶Ú´Ù.");
+		System.out.println("ï¿½Ú´ï¿½.");
 	}
 	
 	public void fly(){

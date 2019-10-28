@@ -1,4 +1,4 @@
-package programmers.mocktest;
+package programmers;
 
 import java.util.ArrayList;
 

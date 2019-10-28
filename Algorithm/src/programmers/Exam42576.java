@@ -58,14 +58,14 @@ public class Exam42576 {
 		
 		System.out.println();
 		
-		Iterator b = map.keySet().iterator();
+		Iterator<String> b = map.keySet().iterator();
 		while(b.hasNext()){
 			System.out.print(b.next() + "   ");
 		}
 		
 		
 		System.out.println();
-		Iterator c = map.values().iterator();
+		Iterator<Object> c = map.values().iterator();
 		while(c.hasNext()){
 			System.out.print(c.next() + "   ");
 		}
