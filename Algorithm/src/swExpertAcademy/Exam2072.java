@@ -1,6 +1,5 @@
 package swExpertAcademy;
 
-import java.io.FileInputStream;
 import java.util.Scanner;
 
 public class Exam2072 {

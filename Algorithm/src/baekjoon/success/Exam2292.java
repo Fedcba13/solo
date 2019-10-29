@@ -10,8 +10,6 @@ public class Exam2292 {
 
 		int input = sc.nextInt();
 		
-		input= input;
-		
 		int tmp = 1;
 		int temp = 1;
 		

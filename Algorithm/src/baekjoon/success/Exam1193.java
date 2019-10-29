@@ -25,5 +25,7 @@ public class Exam1193 {
 		} else {
 			System.out.println((answer - input + 1) + "/" + (temp + (input - answer)));
 		}
+		
+		sc.close();
 	}
 }
