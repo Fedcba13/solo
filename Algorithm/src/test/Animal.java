@@ -13,7 +13,7 @@ public class Animal {
 	public Animal() {
 		this("강아지 ");
 		System.out.println("동물이 생성되었어");
-		new Value<String>("15", "25");
+		//new Value<String>("15", "25");
 	}
 	
 	public Animal(String s) {

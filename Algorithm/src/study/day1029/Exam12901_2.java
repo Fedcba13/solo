@@ -16,8 +16,10 @@ public class Exam12901_2 {
 	  public String solution(int a, int b) {
 		  
 		  LocalDate date = LocalDate.of(2016, a, b);
-		  DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("E", Locale.ENGLISH);
-	    
+		  System.out.println(date);
+		  DateTimeFormatter dateTimeFormatter = 
+				  DateTimeFormatter.ofPattern("E", Locale.ENGLISH);
+
 	      return date.format(dateTimeFormatter).toUpperCase();
 	  }
 

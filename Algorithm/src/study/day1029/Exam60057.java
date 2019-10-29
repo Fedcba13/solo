@@ -16,7 +16,10 @@ public class Exam60057 {
         String answerStr = s;
         
         //i : 자를 단위 i가 4인경우, 4개의 문자 단위로 자름.
-        for(int i=(int)Math.ceil(s.length() *1.0 / 2); i>0; i--) {
+        for(int i=1; i<=s.length()/2; i++) {
+        	if(answerStr.length() <= i){
+        		break;
+        	}
         	int curSize = (int) Math.ceil(s.length() *1.0 / i);
         	String[] curArr = new String[curSize];
         	for(int j=0; j<curArr.length; j++) { // 값 대입
@@ -30,7 +33,7 @@ public class Exam60057 {
         	
         	//문자열 압축
         	//압축된 문자
-        	StringBuffer sb = new StringBuffer("");
+        	StringBuilder sb = new StringBuilder("");
         	for(int j=0; j<curArr.length; j++) {
         		int duplicateCnt = 1;  // 압축된 숫자
         		if(curArr[j] == null) {
@@ -61,7 +64,7 @@ public class Exam60057 {
         		}
         	}//압축 끝
         	
-        	if(answerStr.equals("") || answerStr.length() > sb.length()) {
+        	if(answerStr.length() > sb.length()) {
         		answerStr = sb.toString();
         	}
         	
