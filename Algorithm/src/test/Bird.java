@@ -1,12 +1,16 @@
 package test;
 
+import java.util.ArrayList;
+
 public class Bird extends Animal{
 	private int wing = 3;
+	
+	ArrayList<String> asd = new ArrayList(100);
 	
 	{
 		System.out.println("안녕 나는 새야");
 		//wing = eye; // 부모의 eye를 현재 wing에 넣음 => 가능
-		//wing = age; // 부모의 나이를 현재 wing에 넣음 => 불가능
+//		wing = age; // 부모의 나이를 현재 wing에 넣음 => 불가능
 		setAge(25); //이러한 경우에는 super 생성자를 이용하거나 setter메소드를 이용 / getter 메소드를 이용
 		wing = getAge();
 	}
