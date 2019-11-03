@@ -1,4 +1,4 @@
-package programmers.success;
+package programmers;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -16,7 +16,7 @@ public class Exam42577 {
 		int min = 21;
 		ArrayList<String> arrList = new ArrayList<>();
 		HashMap<String, String> hash = new HashMap<>();
-		for(int i=0; i<phone_book.length; i++) { // ÃÖ¼Ò ±æÀÌ ±¸ÇÏ±â.
+		for(int i=0; i<phone_book.length; i++) { // ï¿½Ö¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï±ï¿½.
 			if(phone_book[i].length() < min) {
 				min = phone_book[i].length();
 			}

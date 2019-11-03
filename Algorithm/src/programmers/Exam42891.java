@@ -1,4 +1,4 @@
-package programmers.success;
+package programmers;
 
 import java.util.ArrayList;
 

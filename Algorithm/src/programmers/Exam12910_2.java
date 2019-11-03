@@ -1,9 +1,9 @@
-package programmers.success;
+package programmers;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Exam12910 {
+public class Exam12910_2 {
 
 	public static void main(String[] args) {
 		int[] temp = solution(new int[] { 5, 9, 7, 10 }, 5);
@@ -24,21 +24,25 @@ public class Exam12910 {
 	}
 
 	public static int[] solution(int[] arr, int divisor) {
-		ArrayList<Integer> temp = new ArrayList<>();
-		for (int i = 0; i < arr.length; i++) {
+		ArrayList<Integer> arrayList = new ArrayList<>(arr.length);
+		
+		for(int i=0; i<arr.length; i++) {
 			if(arr[i] % divisor == 0) {
-				temp.add(arr[i]);
+				arrayList.add(arr[i]);
 			}
 		}
-		if(temp.size() == 0) {
-			return new int[] {-1};
+		
+		if(arrayList.size() == 0) {
+			arrayList.add(-1);
 		}
-		int[] answer = new int[temp.size()];
-		for(int i=0; i<temp.size();i++) {
-			answer[i] = temp.get(i);
+		
+		int[] result = new int[arrayList.size()];
+		
+		for(int i=0; i<result.length; i++) {
+			result[i] = arrayList.get(i);
 		}
-		Arrays.sort(answer);
-		return answer;
+		
+		return result;
 	}
 
 }

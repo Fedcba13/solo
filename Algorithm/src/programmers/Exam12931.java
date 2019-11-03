@@ -1,4 +1,4 @@
-package programmers.success;
+package programmers;
 
 public class Exam12931 {
 	public static void main(String[] args) {
