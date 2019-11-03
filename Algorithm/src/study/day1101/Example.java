@@ -1,7 +1,7 @@
 package study.day1101;
 
 public class Example {
-	
+	final int s =3 ;
 	int age;
 	int b = 7;
 	private int p_age;
@@ -70,6 +70,7 @@ public class Example {
 			int bbb = 7;
 			public void print() {
 				System.out.println("안녕 나는 익명이야");
+				super.print();
 			}
 		};
 		//System.out.println(a_e.bbb); => 사용불가 (상속개념)
