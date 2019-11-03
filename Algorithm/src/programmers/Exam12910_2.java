@@ -1,7 +1,6 @@
 package programmers;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.TreeSet;
 
 public class Exam12910_2 {
 
@@ -24,22 +23,22 @@ public class Exam12910_2 {
 	}
 
 	public static int[] solution(int[] arr, int divisor) {
-		ArrayList<Integer> arrayList = new ArrayList<>(arr.length);
+		TreeSet<Integer> treeSet = new TreeSet<>();
 		
 		for(int i=0; i<arr.length; i++) {
 			if(arr[i] % divisor == 0) {
-				arrayList.add(arr[i]);
+				treeSet.add(arr[i]);
 			}
 		}
 		
-		if(arrayList.size() == 0) {
-			arrayList.add(-1);
+		if(treeSet.size() == 0) {
+			treeSet.add(-1);
 		}
 		
-		int[] result = new int[arrayList.size()];
-		
-		for(int i=0; i<result.length; i++) {
-			result[i] = arrayList.get(i);
+		int[] result = new int[treeSet.size()];
+		int cnt = 0;
+		for(int temp : treeSet) {
+			result[cnt++] = temp;
 		}
 		
 		return result;
