@@ -31,7 +31,7 @@ public class Exam60058 {
 			} else {
 				cnt--;
 			}
-			if (cnt == 0 || i == w.length()-1) {
+			if (cnt == 0) {
 				u.append(w.substring(0, i+1));
 				v.append(w.substring(i+1, w.length()));
 				break;
@@ -61,6 +61,7 @@ public class Exam60058 {
 	public static boolean correctString(String w) {
 		StringBuilder sb = new StringBuilder(w);
 		for (int i = 0; i < sb.length() - 1; i++) {
+			
 			if (sb.charAt(i) == '(' && sb.charAt(i + 1) == ')') {
 				sb.replace(i, i + 2, "");
 				i = i - 2;
