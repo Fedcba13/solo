@@ -1,6 +1,6 @@
 package programmers;
 
-public class Exam12915 {
+public class Exam12915_1 {
 
 	public static void main(String[] args) {
 		String[] answer = solution(new String[] { "abce", "abcd", "cdx" }, 2);

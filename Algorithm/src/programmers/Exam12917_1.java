@@ -1,6 +1,6 @@
 package programmers;
 
-public class Exam12917 {
+public class Exam12917_1 {
 
 	public static void main(String[] args) {
 		System.out.println(solution("Zbcdefg"));
