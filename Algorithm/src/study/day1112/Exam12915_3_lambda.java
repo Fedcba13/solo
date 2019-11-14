@@ -2,6 +2,8 @@ package study.day1112;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.stream.Stream;
 
 public class Exam12915_3_lambda {
@@ -34,6 +36,11 @@ public class Exam12915_3_lambda {
 
 	public static String[] solution(String[] strings, int n) {
 		Stream<String> stream = Arrays.stream(strings);
+		
+//		Comparator.reverseOrder();
+//		
+//		java.util.Collections.reverse(list);
+//		Arrays.asList(new String[] {"A","B"});
 		
 		Comparator<String> comp = (p1, p2) -> {
 			int compare = Character.compare(p1.charAt(n), p2.charAt(n)); 

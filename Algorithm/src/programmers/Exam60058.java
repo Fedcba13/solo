@@ -1,5 +1,8 @@
 package programmers;
 
+import java.io.IOException;
+import java.util.ArrayList;
+
 public class Exam60058 {
 
 	public static void main(String[] args) {
@@ -53,6 +56,7 @@ public class Exam60058 {
 					sb.append("(");
 				}
 			}
+		
 			return sb.toString();
 		}
 

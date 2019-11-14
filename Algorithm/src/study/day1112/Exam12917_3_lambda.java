@@ -11,7 +11,9 @@ public class Exam12917_3_lambda {
 		
 		StringBuilder sb = new StringBuilder();
 		
-		s.chars().mapToObj(i -> (char) i).sorted((i,j) -> Integer.compare(j, i)).forEach(sb::append);;
+		s.chars().mapToObj(i -> (char) i)
+				.sorted((i,j) -> Integer.compare(j, i))
+				.forEach(sb::append);
 	
 		return "" + sb;
 	}

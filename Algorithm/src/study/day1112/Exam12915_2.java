@@ -1,8 +1,11 @@
 package study.day1112;
 
+import java.util.Arrays;
+
 public class Exam12915_2 {
 
 	public static void main(String[] args) {
+		Integer.parseInt("asd");
 		String[] answer = solution(new String[] { "abce", "abcd", "cdx" }, 2);
 		for (int i = 0; i < answer.length; i++) {
 			System.out.print(answer[i] + "   ");
@@ -59,6 +62,7 @@ public class Exam12915_2 {
 			if(cnt == 0) {
 				break;
 			}
+			
 		}
 		
 		return strings;

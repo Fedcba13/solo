@@ -1,5 +1,11 @@
 package study.day1108;
 
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.stream.Stream;
+
 public class Abstarct {
 	
 	public static void main(String[] args) {
@@ -16,6 +22,14 @@ public class Abstarct {
 		
 		System.out.println(AbstractTest4.a);
 		
+		Set<Integer> set = new HashSet<>();
+		set.add(1);
+		set.add(2);
+		set.add(3);
+		
+		Stream<Integer> stream = set.stream();
+		stream.sorted(Comparator.reverseOrder());
+		
 	}
 
 }
@@ -23,6 +37,7 @@ public class Abstarct {
 interface InterfaceTest{
 	
 	static final int a = 3;
+	final static int c = 3;
 	int b = 3;
 	
 	void a();
@@ -56,7 +71,7 @@ class AbstractTestTest extends AbstractTest{
 	
 }
 
-abstract class AbstractTest2 implements InterfaceTest{
+abstract class AbstractTest2 implements InterfaceTest, InterfacetTest2, InterfacetTest3{
 	public void a() {
 		
 	}

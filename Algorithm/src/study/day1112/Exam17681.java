@@ -21,6 +21,8 @@ public class Exam17681 {
 			System.out.println(result[i]);
 		}
 		System.out.println("\n\n\n");
+		
+		System.out.println(String.format("%05s", "111"));
 
 	}
 
