@@ -1,8 +1,13 @@
 package study.day1112;
 
+import java.time.LocalTime;
+
 public class Exam17681 {
 
 	public static void main(String[] args) {
+		
+		LocalTime lt = LocalTime.of(23, 23, 30, 30);
+		
 		String[] result = new Exam17681().solution(5, new int[] { 9, 20, 28, 18, 11 }, new int[] { 30, 1, 21, 17, 28 });
 		for (int i = 0; i < result.length; i++) {
 			System.out.println(result[i]);

@@ -2,34 +2,34 @@ package test;
 
 import java.util.Scanner;
 
-//�Է� / ���
+//입력 / 출력
 /*
 2 333
-���̳� �赵��
-�輼�� �����
+강미나 김도연
+김세정 김소혜
 
-�輼�� ���̳�
-����� �赵��
+김세정 강미나
+김소혜 김도연
 
 3 -777
-���̳� �赵�� �輼��
-����� ��û�� ������
-�ӳ��� ���ҹ� ��ä��
+강미나 김도연 김세정
+김소혜 김청하 유연정
+임나영 전소미 정채연
 
-�赵�� �輼�� ������
-���̳� ��û�� ��ä��
-����� �ӳ��� ���ҹ�
+김도연 김세정 유연정
+강미나 김청하 정채연
+김소혜 임나영 전소미
 
 4 7
-���̳� �赵�� �輼�� �����
-��û�� ������ �ӳ��� ���ҹ�
-��ä�� �ְ�� ������ ���ö�
-������ �質�� ����� �ڼҿ�
+강미나 김도연 김세정 김소혜
+김청하 유연정 임나영 전소미
+정채연 주결경 최유정 강시라
+기희현 김나영 김소희 박소연
 
-���ö� �ڼҿ� ����� �質��
-���ҹ� �ְ�� ������ ������
-����� ������ �ӳ��� ��ä��
-�輼�� �赵�� ���̳� ��û��
+강시라 박소연 김소희 김나영
+전소미 주결경 유연정 기희현
+김소혜 최유정 임나영 정채연
+김세정 김도연 강미나 김청하
 
  */
 
@@ -38,16 +38,16 @@ public class Exam {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		int size = sc.nextInt(); // ũ��
-		int rotate = sc.nextInt(); // ȸ����
+		int size = sc.nextInt(); // 크기
+		int rotate = sc.nextInt(); // 회전수
 		
-		int flag = 1; // ȸ������
+		int flag = 1; // 회전방향
 		int start = 0; 
 		int end = size-1;
 		
-		sc.nextLine(); // ���๮�� ������
+		sc.nextLine(); // 개행문자 날리기
 		
-		String[][] matrix = new String[size][size]; // ���
+		String[][] matrix = new String[size][size]; // 행렬
 		
 		for (int i=0; i<size; i++) {
 			String[] temp = sc.nextLine().split("\\s");
@@ -57,15 +57,15 @@ public class Exam {
 		System.out.println();
 		
 		while(start < end) {
-			int curSize = end - start + 1;  //���� �迭ũ��
-			int cnt = curSize * curSize - (curSize - 2) * (curSize - 2); // �迭�� �� ��
+			int curSize = end - start + 1;  //현재 배열크기
+			int cnt = curSize * curSize - (curSize - 2) * (curSize - 2); // 배열의 값 수
 			
 			String[] curMatrix = new String[cnt];
 			
 			int i = start;
 			int j = start;
 //			int delta = 0;
-//			//�׵θ� ���ϱ�... ��ġ��...
+//			//테두리 구하기... 고치기...
 //			for(; j<end; j++) {
 //				curMatrix[delta++] = matrix[i][j];
 //			}
@@ -107,7 +107,7 @@ public class Exam {
 				}
 			}
 			
-			int curRotate = flag * rotate % cnt ; // ȸ����
+			int curRotate = flag * rotate % cnt ; // 회전수
 			if(curRotate < 0) {
 				curRotate = cnt + curRotate;
 			}
