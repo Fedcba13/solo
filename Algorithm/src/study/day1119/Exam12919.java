@@ -1,4 +1,4 @@
-package programmers;
+package study.day1119;
 
 import java.util.stream.IntStream;
 
