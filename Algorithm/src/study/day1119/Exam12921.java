@@ -1,7 +1,5 @@
 package study.day1119;
 
-import java.util.stream.IntStream;
-
 public class Exam12921 {
 
 	public static void main(String[] args) {

@@ -17,7 +17,7 @@ public class Exam12925 {
 		} else {
 			answer = Integer.parseInt(s);
 		}
-		return answer;
+		return Integer.parseInt(s);
 	}
 
 }

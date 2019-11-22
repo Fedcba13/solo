@@ -24,10 +24,12 @@ public class Exam12922 {
 
 	public String solution(int n) {
 		StringBuilder sb = new StringBuilder();
+		Integer a =  new Integer(3);
 		IntStream.range(1, n+1)
 				 .forEach(i -> {
-					 if(i%2 == 0)
+					 if(i%2 == 0){
 						 sb.append("박");
+					 }
 					 else
 						 sb.append("수");
 				 });
