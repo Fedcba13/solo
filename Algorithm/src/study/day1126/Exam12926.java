@@ -1,4 +1,4 @@
-package programmers;
+package study.day1126;
 
 public class Exam12926 {
 	public static void main(String[] args) {

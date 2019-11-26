@@ -1,4 +1,4 @@
-package programmers;
+package study.day1126;
 
 public class Exam12930 {
 
